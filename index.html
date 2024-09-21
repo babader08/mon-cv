@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de CV & Lettre de Motivation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Générateur de CV Professionnel</h1>
+            <p>Créez votre CV en quelques minutes !</p>
+        </div>
+    </header>
+
+    <section class="form-section">
+        <div class="container">
+            <h2>Informations Personnelles</h2>
+            <form id="cvForm">
+                <div class="form-group">
+                    <label for="nom">Nom Complet :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom complet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone :</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateNaissance">Date de naissance :</label>
+                    <input type="date" id="dateNaissance" name="dateNaissance" required>
+                </div>
+
+                <h2>Expérience Professionnelle</h2>
+                <div class="form-group">
+                    <label for="experience">Description de l'expérience (facultatif) :</label>
+                    <textarea id="experience" name="experience" placeholder="Décrivez votre expérience professionnelle (ou laissez vide si vous n'en avez pas)"></textarea>
+                </div>
+
+                <h2>Compétences</h2>
+                <div class="form-group">
+                    <label for="competences">Compétences :</label>
+                    <textarea id="competences" name="competences" placeholder="Listez vos compétences (séparées par une virgule)"></textarea>
+                </div>
+
+                <h2>Langues</h2>
+                <div class="form-group">
+                    <label for="langues">Langues et niveaux (exemple: Français - 80%) :</label>
+                    <textarea id="langues" name="langues" placeholder="Listez les langues et leurs niveaux"></textarea>
+                </div>
+
+                <h2>Centres d'Intérêt</h2>
+                <div class="form-group">
+                    <label for="interet">Centres d'Intérêt :</label>
+                    <textarea id="interet" name="interet" placeholder="Listez vos centres d'intérêt"></textarea>
+                </div>
+
+                <h2>Souhaitez-vous créer une lettre de motivation ?</h2>
+                <div class="form-group">
+                    <input type="radio" id="lettreOui" name="lettre" value="oui">
+                    <label for="lettreOui">Oui</label>
+                    <input type="radio" id="lettreNon" name="lettre" value="non" checked>
+                    <label for="lettreNon">Non</label>
+                </div>
+
+                <button type="submit">Générer CV</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - Générateur de CV. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
